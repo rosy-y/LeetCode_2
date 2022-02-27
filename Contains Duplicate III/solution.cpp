@@ -1,13 +1,14 @@
 class Solution {
 public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
-        set<int> s;
+        set<long> s;
         
         for (int i=0; i<nums.size(); i++) {
-            if (i > k) s.erase(nums[i-k-1]);
+            long n = nums[i];
+            if (i > k) s.erase(nums[i-k-1]); 
             
-            auto j = s.lower_bound(nums[i]-t);
-            if (j != s.end() && *j-nums[i] <= t) return true;
+            auto j = s.lower_bound(n - t);   
+            if (j != s.end() && *j-n <= t) return true;
             s.insert(nums[i]);
         }
         return false;

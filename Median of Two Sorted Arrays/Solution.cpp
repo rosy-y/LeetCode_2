@@ -7,7 +7,7 @@ public:
         int size = nums1.size();
         if (size == 1) return nums1[0];
         else if (size %2 == 1) {
-            return nums1[(size-1)/2.0];
+            return nums1[(size-1)/2.0]; //2.0
         }
         int sum = 0;        
         sum = nums1[size/2-1] + nums1[size/2];

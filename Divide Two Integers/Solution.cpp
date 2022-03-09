@@ -3,7 +3,7 @@ public:
     int divide(int dividend, int divisor) {
         if (dividend == INT_MIN && divisor == -1) return INT_MAX;
         
-        int sign = dividend>0 ^ divisor>0 ? -1 : 1;
+        int sign = dividend>0 ^ divisor>0 ? -1 : 1;  //cat
         long a = labs(dividend), b = labs(divisor), ans = 0;
         
         

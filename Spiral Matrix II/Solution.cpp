@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
         vector<vector<int>> vv(n, vector<int>(n));
-        int k = 1;
+        int k = 1;  // 체크
         
         for (int i=0; i<(n+1)/2; i++) {
             for (int j=i; j<n-i; j++) vv[i][j] = k++;  // 왼>오

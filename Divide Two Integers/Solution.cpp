@@ -9,7 +9,7 @@ public:
         
         while (a >= b) {
             long tmp = b, n = 1;
-            while (tmp << 1 <= a) {
+            while (tmp << 1 <= a) {  //cat
                 tmp <<= 1;
                 n <<= 1;
             }

@@ -4,7 +4,7 @@ public:
         stack<int> s;
         
         for (auto t : tokens) {
-            if(t.size()>1 || isdigit(t[0])) s.push(stoi(t));
+            if(t.size()>1 || isdigit(t[0])) s.push(stoi(t));  // check
             else {
                 auto a = s.top(); s.pop();
                 auto b = s.top(); s.pop();
